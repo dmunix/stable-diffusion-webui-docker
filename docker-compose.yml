@@ -1,10 +1,10 @@
-version: '1'
+version: '3.3'
 services:
   stable-diffusion:
     build: .
     # restart: unless-stopped
     volumes:
-      - ./models:/content/stable-diffusion-webui/models
+      - ./models:/content/stable-diffusion-webui/models/Stable-diffusion
     ports:
       - "7860:7860"
     deploy:
